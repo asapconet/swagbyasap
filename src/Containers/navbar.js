@@ -1,6 +1,6 @@
 import React from 'react'
 
-const navbar = () => {
+const Navbar = () => {
     return (
       <nav>
         <img src="" alt="" />
@@ -20,4 +20,4 @@ const navbar = () => {
     );
 }
 
-export default navbar
+export default Navbar
