@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import "../App.scss";
 
-const Buttons = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const Button = ({ onSubmit, className, children }) => {
+  return (
+    <button className={`btn ${className}`} onClick={onSubmit}>
+      {children}
+    </button>
+  );
+};
 
-export default Buttons
+export default Button;

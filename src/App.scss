@@ -1,0 +1,384 @@
+$background1: rgb(19, 24, 32);
+$background1trns: transparent;
+$backgroundMajor1: #131820;
+$backgroundMajor2: #1f2d44;
+$background1gld: #f9b01b;
+$baseText1: white;
+$baseText2: #8caec38f;
+$backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
+
+@mixin textBackgradeint {
+  background: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin cursor-down {
+  padding: 7rem 0 5rem 0;
+  color: $backgroundMajor2;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+@mixin border-stuff {
+  border: 0.1rem solid $baseText1;
+  border-radius: 4rem;
+  background-color: $background1trns;
+  color: $baseText1;
+}
+
+@mixin gen-btn {
+  @include border-stuff;
+  // background: $backroundgradient1;
+  height: 2rem;
+  width: 7rem;
+  margin: 0.2rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+@mixin gen-btn2 {
+  @include gen-btn;
+  $background1trns: #f9b01b;
+  $background1: #000;
+  background-color: $background1trns;
+  color: $background1;
+  border: none;
+}
+// COMPONENT STYLES
+.btn {
+  @include gen-btn;
+  border: none;
+}
+
+//END OF COMPONENT STYLE
+
+// NAVBAR STYLES //
+
+nav {
+  margin-left: -2rem;
+}
+.nav-container {
+  position: fixed;
+  top: 0;
+  background-color: $background1;
+  color: $baseText1;
+  height: 4.7rem;
+  width: 100%;
+}
+.nav-items {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  margin: 0 12rem 0 12rem;
+  height: 100%;
+
+  img {
+    width: 8rem;
+    padding-right: 3rem;
+  }
+  input {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 46rem;
+    padding: 0 0 0 1rem;
+  }
+  li {
+    list-style-type: none;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 0.7rem 0 1rem;
+  }
+  .btn2 {
+    @include gen-btn2;
+  }
+}
+//END OF NAV STYLES //
+
+//ONBOARDING STYLES //
+
+.onboarding {
+  height: 37.5rem;
+  width: 100%;
+  padding: 4.7rem 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.on-the-board {
+  display: flex;
+  flex-direction: row;
+  // background-color: white;
+  width: 100%;
+  margin: 0 15rem 0 15rem;
+  height: 100%;
+  // background-color: $backgroundMajor1;
+  img {
+    margin-top: 4rem;
+  }
+}
+
+.onthe-gen {
+  background-image: radial-gradient(
+    at center left,
+    #1f2d44 0%,
+    $backgroundMajor1 46%
+  );
+}
+
+.stamp-sec {
+  background-color: $background1trns;
+  text-align: left;
+  padding: 1rem 1.9rem 0 1rem;
+  height: auto;
+  width: 31%;
+  // border: 0.1rem dashed rgb(221, 54, 221);
+  // margin-bottom: 0.5rem;
+  margin-top: 2rem;
+
+  .frame {
+    @include gen-btn2;
+    $background1trns: rgb(72, 47, 80);
+    background-color: $background1trns;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(196, 125, 196);
+    width: 21rem;
+    height: 3rem;
+    margin: 0 0 1rem 0;
+    span {
+      @include textBackgradeint;
+    }
+  }
+  h1 {
+    color: $baseText1;
+    margin: 0 0 2rem 0;
+    font-size: 3rem;
+    span {
+      @include textBackgradeint();
+    }
+  }
+  p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: $baseText1;
+    line-height: 1.7rem;
+  }
+  .general-btn {
+    @include gen-btn;
+    background: $backroundgradient1;
+    width: 13rem;
+    height: 3rem;
+    margin: 1.8rem 0 0.6rem 0;
+    border: none;
+  }
+
+  .image-sec {
+    display: flex;
+    align-items: center;
+    width: 63%;
+    div {
+      padding: 5.8rem 0 5.8rem 0;
+      background-color: white;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+//END OF ONBOARDING STYLE //
+
+//COUNTER SECTION STYLE //
+.counter-bg {
+  background-color: $background1trns;
+  color: $baseText1;
+  margin: 0rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  // margin: 0 3rem 0 0;
+}
+
+.card-body {
+  margin: 0 7.5rem 0 7.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+}
+
+.cards {
+  border-radius: 4rem;
+  border: double 2px transparent;
+  background-image: linear-gradient(rgba(19, 24, 32, 1), rgba(19, 24, 32, 1)),
+    radial-gradient(circle at top right, white, #131820);
+  // background-origin: border-box;
+  background-clip: content-box;
+  color: $baseText1;
+  width: 22rem;
+  height: 11rem;
+  margin: 0 2.5rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  p {
+    font-size: large;
+  }
+}
+.text-end {
+  text-align: center;
+  padding: 2rem 0 5rem 0;
+  background-color: inherit;
+  color: $baseText2;
+}
+// END OF COUNTER SECTION //
+
+// STARTING INCREDIBLE SECTION //
+
+.incredible-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem 9rem 5rem 10.7rem;
+  line-height: 1.65rem;
+  margin: 5rem 0 0 0;
+  h5 {
+    @include textBackgradeint;
+    margin: 0 0 -0.7rem 0;
+  }
+  h1 {
+    color: $baseText1;
+    font-size: 2.5rem;
+    font-weight: 370;
+  }
+  p {
+    color: #8caec3;
+  }
+  .cursor-down {
+    @include cursor-down;
+  }
+}
+// END OF INCREDIBLE SECTION //
+
+// STARTING OF FEATURE SECTION //
+
+.feature-box {
+  text-align: center;
+  padding: 2rem 15rem 2rem 15rem;
+  h5 {
+    @include textBackgradeint;
+  }
+  h1 {
+    color: $baseText1;
+    font-size: 2.5rem;
+    font-weight: 370;
+  }
+  .main-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .box-1 {
+      width: 30%;
+      text-align: left;
+      line-height: 2rem;
+      padding: 3rem 3rem 3rem 0;
+      span {
+        background: rgb(102, 48, 102);
+        border-radius: 50%;
+      }
+    }
+    .box2 {
+      width: 70%;
+      img {
+        width: 40rem;
+      }
+    }
+  }
+  h3 {
+    color: $baseText1;
+  }
+  p {
+    text-align: left;
+    color: #8caec3;
+    padding-top: 2.5rem;
+  }
+  .cursor-down {
+    @include cursor-down();
+  }
+}
+
+// END OF FEATURE SECTION //@include
+
+// STARTING OF PREVIEW SECTION //
+
+.preview-box {
+  align-items: center;
+  padding: 0 15rem 6rem 10rem;
+  h1 {
+    color: $baseText1;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 0 5rem;
+  }
+  .video-card {
+    width: 100%;
+    height: 40rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border-radius: 2rem;
+    background: radial-gradient(
+      at top left,
+      rgba(224, 68, 224, 0.658) 58%,
+      rgb(17, 17, 153) 100%
+    );
+    .videos {
+      background-image: url(https://i.vimeocdn.com/video/1203920922-ae0534211497d3780c6d7bbd336e1f6e296348dfb4ea606444f09755909d6c74-d?mw=1200&mh=675);
+      width: 100%;
+      height: 100%;
+      border-radius: 2rem;
+      // background: $baseText1;
+      .main-video {
+        width: 100%;
+        height: 100%;
+        border: none;
+        // scroll-behavior: none;
+      }
+    }
+  }
+  .option-box {
+    margin-top: 4rem;
+    margin-left: 6rem;
+    display: flex;
+    flex-direction: row;
+    .option-box-main {
+      padding: 2rem;
+      width: 29%;
+      text-align: center;
+      line-height: 2rem;
+    }
+    h3 {
+      color: $baseText1;
+    }
+    p {
+      color: #8caec3;
+    }
+  }
+}

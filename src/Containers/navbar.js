@@ -1,23 +1,38 @@
-import React from 'react'
+import React from "react";
+import "../App.scss";
+import Button from "../Components/buttons";
 
 const Navbar = () => {
-    return (
-      <nav>
-        <img src="" alt="" />
+  return (
+    <div className="nav-container">
+      <div className="nav-items">
         <div>
-          <p>company</p>
-          <p>education</p>
-          <p>free leaning</p>
-          <p>pricing</p>
-          <p>contanct</p>
+          <img
+            src="https://www.theswagacademy.com/wp-content/uploads/2021/05/swag_text_white.png"
+            alt="swaglogo"
+          />
         </div>
+        <nav>
+          <ul>
+            <li>
+              company <a href="sum.com">v</a>
+            </li>
+            <li>
+              education <a href="sum.com">v</a>
+            </li>
+            <li>freeleaning</li>
+            <li>pricing</li>
+            <li>contanct</li>
+          </ul>
+        </nav>
         <div>
-            <input></input>
-            <button>signin</button>
-            <button>signup</button>
+          <input></input>
+          <Button>sign in</Button>
+          <Button className="btn2">sign up</Button>
         </div>
-      </nav>
-    );
-}
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
