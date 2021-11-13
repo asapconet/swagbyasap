@@ -382,3 +382,53 @@ nav {
     }
   }
 }
+// END OF PREVIEW SECTION //
+
+//STARTING OF BENEFIT SECTION //
+.benefit-box {
+  background-image: radial-gradient(at middle right, purple white);
+  padding: 2rem 12rem 4rem 10rem;
+  .top-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    text-align: center;
+    line-height: 2rem;
+    .main-box {
+    display: flex;
+    justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      width: 40rem;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: $baseText1;
+      margin-bottom: -.5rem;
+    }
+    p {
+      color: $baseText2;
+      font-size: 1.1rem;
+    }
+  }
+  .sub-container {
+    display: flex;
+    justify-content: center;
+    
+  .sub-boxes {
+    // border: solid .4rem $baseText1;
+    width: 30%;
+    text-align:center;
+    h3 {
+      color: $baseText1;
+      font-size: 1.2;
+      font-weight: 500;
+    }
+    p {
+      color: $baseText2;
+      font-size: 1rem;
+    }
+  }
+  }
+}
