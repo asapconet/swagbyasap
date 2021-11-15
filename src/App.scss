@@ -65,14 +65,13 @@ nav {
   color: $baseText1;
   height: 4.7rem;
   width: 100%;
+  
 }
 .nav-items {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   margin: 0 12rem 0 12rem;
   height: 100%;
-
   img {
     width: 8rem;
     padding-right: 3rem;
@@ -89,6 +88,12 @@ nav {
     width: 46rem;
     padding: 0 0 0 1rem;
   }
+  a:hover {
+    color: #ebd456;
+  }
+  li:hover {
+    color: #ebd456;
+  }
   li {
     list-style-type: none;
     text-transform: capitalize;
@@ -97,6 +102,13 @@ nav {
   }
   .btn2 {
     @include gen-btn2;
+  }
+  .btn2:hover {
+    color: black;
+    background: #f0ae2ac5;
+  }
+  Button:hover {
+    color: #f9b01b;
   }
 }
 //END OF NAV STYLES //
@@ -137,8 +149,6 @@ nav {
   padding: 1rem 1.9rem 0 1rem;
   height: auto;
   width: 31%;
-  // border: 0.1rem dashed rgb(221, 54, 221);
-  // margin-bottom: 0.5rem;
   margin-top: 2rem;
 
   .frame {
@@ -211,7 +221,6 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  // margin: 0 3rem 0 0;
 }
 
 .card-body {
@@ -226,12 +235,12 @@ nav {
   border: double 2px transparent;
   background-image: linear-gradient(rgba(19, 24, 32, 1), rgba(19, 24, 32, 1)),
     radial-gradient(circle at top right, white, #131820);
-  // background-origin: border-box;
+  background-origin: border-box;
   background-clip: content-box;
   color: $baseText1;
-  width: 22rem;
-  height: 11rem;
-  margin: 0 2.5rem 0 1rem;
+    width: 22rem;
+    height: 11rem;
+    margin: 0 2.5rem 0 1rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -648,7 +657,7 @@ nav {
     p {
       color: rgb(172, 163, 163);
       width: 63%;
-      font-size: .9rem;
+      font-size: 0.9rem;
       line-height: 1rem;
     }
   }
@@ -667,17 +676,17 @@ nav {
       }
       a {
         padding: 1rem 0 0 0;
-        font-size: .9rem;
+        font-size: 0.9rem;
       }
       a:hover {
-          color: rgb(141, 136, 136);
-        }
+        color: rgb(141, 136, 136);
+      }
     }
   }
   .foots-end {
     color: rgb(141, 136, 136);
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 }
 
-// END OF FOOTER //
+// END OF FOOTER
