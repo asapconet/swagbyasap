@@ -20,9 +20,9 @@ const Navbar = () => {
             <li>
               education <a href="sum.com">v</a>
             </li>
-            <li>freeleaning</li>
-            <li>pricing</li>
-            <li>contanct</li>
+            <li><a href='a.com'>freeleaning</a></li>
+            <li><a href='a.com'>pricing</a></li>
+            <li><a href='a.com'>contanct</a></li>
           </ul>
         </nav>
         <div>

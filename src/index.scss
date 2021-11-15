@@ -1,4 +1,6 @@
 $backgroundMajor1: #131820;
+$baseText1: white;
+
 
 body {
   margin: 0;
@@ -17,4 +19,10 @@ code {
 
 main {
   background-color: $backgroundMajor1;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $baseText1;
 }

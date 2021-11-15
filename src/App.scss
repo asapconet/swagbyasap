@@ -386,7 +386,7 @@ nav {
 
 //STARTING OF BENEFIT SECTION //
 .benefit-box {
-  background-image: radial-gradient(at center right, #590A5D 0%, #131820 58%);
+  background-image: radial-gradient(at center right, #590a5d 0%, #131820 58%);
   padding: 2rem 12rem 4rem 10rem;
   .top-box {
     display: flex;
@@ -447,7 +447,7 @@ nav {
     text-align: center;
     line-height: 2rem;
     h3 {
-      color: $baseText1;
+      @include textBackgradeint;
       font-size: 1.2;
       font-weight: 500;
     }
@@ -574,7 +574,7 @@ nav {
 // STARTING OF TESTIMONIALS SECTION //
 
 .testimonial {
-  padding: 2rem 15rem 5rem 15rem;
+  padding: 2rem 15rem 6rem 15rem;
 
   .gen-body {
     display: flex;
@@ -629,3 +629,55 @@ nav {
 // END OF TESTIMONIALS SECTION //
 
 //STARTING OF FOOTER //
+
+.footer-bkgrnd {
+  background: #1f242b;
+  padding: 2rem 13rem 1.7rem 12rem;
+  .foots {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    width: 100%;
+  }
+  .foots1 {
+    width: 50%;
+    margin-bottom: 3rem;
+    img {
+      width: 17%;
+    }
+    p {
+      color: rgb(172, 163, 163);
+      width: 63%;
+      font-size: .9rem;
+      line-height: 1rem;
+    }
+  }
+  .foots2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 50%;
+    div {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 0 3rem;
+      h4 {
+        color: #8e99b3;
+        margin-top: 0;
+      }
+      a {
+        padding: 1rem 0 0 0;
+        font-size: .9rem;
+      }
+      a:hover {
+          color: rgb(141, 136, 136);
+        }
+    }
+  }
+  .foots-end {
+    color: rgb(141, 136, 136);
+    font-size: .85rem;
+  }
+}
+
+// END OF FOOTER //
