@@ -395,17 +395,17 @@ nav {
     text-align: center;
     line-height: 2rem;
     .main-box {
-    display: flex;
-    justify-content: center;
-        flex-direction: column;
-        align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       width: 40rem;
       margin: 0;
     }
     h1 {
       font-size: 2.5rem;
       color: $baseText1;
-      margin-bottom: -.5rem;
+      margin-bottom: -0.5rem;
     }
     p {
       color: $baseText2;
@@ -415,20 +415,161 @@ nav {
   .sub-container {
     display: flex;
     justify-content: center;
-    
-  .sub-boxes {
-    // border: solid .4rem $baseText1;
-    width: 30%;
-    text-align:center;
+
+    .sub-boxes {
+      // border: solid .4rem $baseText1;
+      width: 30%;
+      text-align: center;
+      h3 {
+        color: $baseText1;
+        font-size: 1.2;
+        font-weight: 500;
+      }
+      p {
+        color: $baseText2;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// END OF BENEFIT SECTION //
+
+// STARTING OF PRODUCTS PRICING SECTION //
+
+.product-ctner {
+  padding: 2rem 12rem 4rem 10rem;
+  .general-cnter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    text-align: center;
+    line-height: 2rem;
     h3 {
       color: $baseText1;
       font-size: 1.2;
       font-weight: 500;
     }
+    h1 {
+      font-size: 2.5rem;
+      color: $baseText1;
+    }
     p {
       color: $baseText2;
       font-size: 1rem;
     }
-  }
+    .gen-cnter0 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      // margin: 0;
+      .gen-cnter1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 35rem;
+        margin-bottom: 5rem;
+      }
+      .price-box {
+        display: flex;
+        justify-content: center;
+        .pro-price {
+          display: flex;
+          justify-content: space-between;
+          p {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #974b9d;
+            font-style: italic;
+            text-decoration: line-through;
+            margin: 0.2rem;
+          }
+        }
+        .price-cnter2 {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          width: 20rem;
+          background-color: #1f242b;
+          color: $baseText1;
+          padding: 2rem 1rem 4rem 1rem;
+          border-radius: 2rem;
+          margin: 2rem 2rem 0 1rem;
+          span {
+            font-size: 2rem;
+            font-weight: 400;
+          }
+          h1 {
+            margin: 0.8rem 0 0.8rem 0;
+            span {
+              font-size: 1.5rem;
+              font-weight: 350;
+            }
+          }
+          li {
+            padding: 0.8rem;
+          }
+          .btn-cnter2 {
+            display: flex;
+            justify-content: center;
+          }
+          .gen-btn2 {
+            @include gen-btn;
+            background: $backroundgradient1;
+            width: 14rem;
+            height: 3rem;
+            cursor: pointer;
+          }
+        }
+      }
+      .price-cnter {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 20rem;
+        height: 100%;
+        background-color: #1f242b;
+        color: $baseText1;
+        padding: 2rem 1rem 4rem 1rem;
+        border-radius: 2rem;
+        margin: 2rem 2rem 0 1rem;
+        span {
+          font-size: 2rem;
+          font-weight: 400;
+        }
+        h1 {
+          margin: 0.8rem 0 0.8rem 0;
+          span {
+            font-size: 1.5rem;
+            font-weight: 350;
+          }
+        }
+        li {
+          padding: 0.8rem;
+        }
+        .btn-cnter {
+          display: flex;
+          justify-content: center;
+        }
+        .gen-btn {
+          @include gen-btn;
+          width: 14rem;
+          height: 3rem;
+          cursor: pointer;
+        }
+        .gen-btn:hover {
+          background: $baseText1;
+          color: #000;
+        }
+      }
+    }
   }
 }
+
+// END OF PRODUCTS PRICING SECTION //
+
+// STARTING OF TESTIMONIALS SECTION //
+
