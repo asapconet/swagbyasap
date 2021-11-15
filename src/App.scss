@@ -386,7 +386,7 @@ nav {
 
 //STARTING OF BENEFIT SECTION //
 .benefit-box {
-  background-image: radial-gradient(at middle right, purple white);
+  background-image: radial-gradient(at center right, #590A5D 0%, #131820 58%);
   padding: 2rem 12rem 4rem 10rem;
   .top-box {
     display: flex;
@@ -573,3 +573,59 @@ nav {
 
 // STARTING OF TESTIMONIALS SECTION //
 
+.testimonial {
+  padding: 2rem 15rem 5rem 15rem;
+
+  .gen-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 1rem 0;
+    margin: 0 0 2.5rem 0;
+    .gen-head {
+      width: 40%;
+      margin: 0 1rem 0 0;
+      h4 {
+        @include textBackgradeint;
+        margin-top: 0;
+      }
+      h3 {
+        color: $baseText1;
+        font-size: 1.99rem;
+        font-weight: 400;
+        margin-top: 0.7rem;
+      }
+    }
+  }
+  .disclaimer {
+    color: $baseText2;
+    width: 60%;
+    font-size: medium;
+    line-height: 1.8rem;
+  }
+  .slide-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .slide-container {
+      height: 10rem;
+      width: 100%;
+      margin-bottom: 1rem;
+      background: $baseText1;
+    }
+    .btn-box {
+      margin: 2rem;
+      .last-btn {
+        @include gen-btn2;
+        background: $backroundgradient1;
+        color: $baseText1;
+        height: 3rem;
+        width: 12rem;
+      }
+    }
+  }
+}
+
+// END OF TESTIMONIALS SECTION //
+
+//STARTING OF FOOTER //
