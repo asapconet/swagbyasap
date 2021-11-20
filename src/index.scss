@@ -1,6 +1,9 @@
 $backgroundMajor1: #131820;
 $baseText1: white;
 
+// * {
+//   font-family: Montserrat, sans-serif;
+// }
 
 body {
   margin: 0;
@@ -22,7 +25,14 @@ main {
 }
 
 a {
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   cursor: pointer;
   color: $baseText1;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  font-family: Montserrat, sans-serif;
 }

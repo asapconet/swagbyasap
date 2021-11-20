@@ -4,7 +4,7 @@ const CounterCard = () => {
     return (
       <div className="card-container">
         <div className="cards">
-          <div>
+          <div className="card-items">
             <h1>123+</h1>
             <p>Ineractive Videos</p>
           </div>

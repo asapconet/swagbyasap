@@ -55,8 +55,41 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
 
 // NAVBAR STYLES //
 
-nav {
-  margin-left: -2rem;
+.nav-list {
+  width: 37rem;
+  display: flex;
+  // flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .sub-list1 {
+    visibility: hidden;
+    height: 100%;
+    // min-width: 5rem;
+    position: absolute;
+    
+    li {
+      box-shadow: 0 2px 7px 1px rgb(0 0 0 / 5%),
+        0 6px 32px 0 rgb(18 43 70 / 10%);
+      border-radius: 4px;
+      visibility: hidden;
+      z-index: 100;
+      padding: auto;
+      top: calc(100% - 15px);
+      background: $baseText1;
+      position: absolute;
+      z-index: 100;
+      color: black;
+      width: 8rem;
+      padding: 2rem 0;
+      list-style: none;
+    }
+  }
+  .sub-list2 {
+    visibility: hidden;
+    li {
+      position: absolute;
+    }
+  }
 }
 .nav-container {
   position: fixed;
@@ -80,12 +113,8 @@ nav {
   }
 
   ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin: 0 1rem 0 -2rem;
     height: 100%;
-    width: 46rem;
-    padding: 0 0 0 1rem;
   }
   a:hover {
     color: #ebd456;
@@ -94,10 +123,15 @@ nav {
     color: #ebd456;
   }
   li {
+    font-family: Montserrat, sans-serif;
+    font-size: 0.8rem;
+    font-stretch: ultra-expanded;
     list-style-type: none;
     text-transform: capitalize;
-    text-align: center;
-    margin: 0 0.7rem 0 1rem;
+    padding: 0 0.7rem 0 0.7rem;
+  }
+  .btn-container {
+    display: flex;
   }
   .btn2 {
     @include gen-btn2;
@@ -124,13 +158,12 @@ nav {
 .on-the-board {
   display: flex;
   flex-direction: row;
-  // background-color: white;
   width: 100%;
   margin: 0 15rem 0 15rem;
   height: 100%;
-  // background-color: $backgroundMajor1;
   img {
     margin-top: 4rem;
+    width: 45rem;
   }
 }
 
@@ -145,10 +178,10 @@ nav {
 .stamp-sec {
   background-color: $background1trns;
   text-align: left;
-  padding: 1rem 1.9rem 0 1rem;
+  padding: 3rem 1.9rem 0 1.9rem;
   height: auto;
-  width: 31%;
-  margin-top: 2rem;
+  width: 45%;
+  // margin-top: 2rem;
 
   .frame {
     @include gen-btn2;
@@ -158,7 +191,7 @@ nav {
     align-items: center;
     justify-content: center;
     color: rgb(196, 125, 196);
-    width: 21rem;
+    width: 20rem;
     height: 3rem;
     margin: 0 0 1rem 0;
     span {
@@ -168,14 +201,15 @@ nav {
   h1 {
     color: $baseText1;
     margin: 0 0 2rem 0;
-    font-size: 3rem;
+    font-size: 2.7rem;
     span {
       @include textBackgradeint();
     }
   }
   p {
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-family: "Monstrait", sans-serif;
+    font-size: .97rem;
+    font-weight: 300;
     color: $baseText1;
     line-height: 1.7rem;
   }
@@ -191,7 +225,7 @@ nav {
   .image-sec {
     display: flex;
     align-items: center;
-    width: 63%;
+    width: 55%;
     div {
       padding: 5.8rem 0 5.8rem 0;
       background-color: white;
@@ -230,13 +264,12 @@ nav {
 }
 
 .cards {
-  border-radius: 4rem;
+  border-radius: 2rem;
   border: double 2px white;
-  // background-image: linear-gradient(rgba(19, 24, 32, 1), rgba(19, 24, 32, 1)),
-  //   radial-gradient(circle at top right, white, #131820);
-  // background-origin: border-box;
-  // background-clip: content-box;
-  background-image: linear-gradient(to left, black, white);
+  background-image: linear-gradient(rgba(19, 24, 32, 1), rgba(19, 24, 32, 1)),
+    radial-gradient(circle at top right, white, #131820);
+  background-origin: border-box;
+  background-clip: content-box;
   color: $baseText1;
   width: 22rem;
   height: 11rem;
@@ -249,7 +282,10 @@ nav {
     margin: 0;
   }
   p {
-    font-size: large;
+    font-size: medium;
+  }
+  .card-item {
+    background: $backgroundMajor1;
   }
 }
 .text-end {
@@ -693,55 +729,28 @@ nav {
 
 // MEDIA QUERIES //
 
-@media screen and (max-width: 750px) {
-  .nav-container {
-    margin: 0;
-    .nav-items {
-      margin: 0;
-      // display: flex;
-      // justify-content: center;
-    }
-    ul,
-    Button {
-      display: none;
-    }
-  }
-  
-  .on-the-board {
-   margin: 0;
-   display: flex;
-   flex-direction: row;
-  }
-}
+// @media screen and (max-width: 750px) {
+//   .nav-container {
+//     margin: 0;
+//     .nav-items {
+//       margin: 0;
+//       // display: flex;
+//       // justify-content: center;
+//     }
+//     ul,
+//     Button {
+//       display: none;
+//     }
+//   }
 
-.nav-container{
- img {
-  animation-duration: 1s;
-  animation-name: sliden;
-}
-}
-p {
-  animation-duration: 1s;
-  animation-name: textmove;
-}
+//   .on-the-board {
+//    margin: 0;
+//    display: flex;
+//    flex-direction: row;
+//   }
+// }
 
-@keyframes sliden {
-  // from {
-  //   margin-left: 100%;
-  //   width: 300%;
-  // }
-  // to {
-  //   margin-left: 0%;
-  //   width: 100%;
-  // }
-}
-@keyframes textmove {
-  // from {
-  //   margin-left: 100%;
-  //   width: 400%;
-  // }
-  // to {
-  //   margin-left: 0%;
-  //   width: 100%;
-  // }
-}
+// p {
+//   animation-duration: 1s;
+//   animation-name: textmove;
+// }

@@ -13,19 +13,38 @@ const Navbar = () => {
           />
         </div>
         <nav>
-          <ul>
+          <ul className="nav-list">
             <li>
-              company <a href="sum.com">v</a>
+              company
+              <ul className="sub-list1">
+                <li>About</li>
+                <li>Careers</li>
+                <li>FAQ</li>
+                {/* <a href="sum.com">v</a> */}
+              </ul>
             </li>
             <li>
-              education <a href="sum.com">v</a>
+              education
+              <ul className="sub-list2">
+                <li>GOAT Acadamy</li>
+                <li>Glossary</li>
+                <li>News</li>
+                <li>Books</li>
+                {/* <a href="sum.com">v</a> */}
+              </ul>
             </li>
-            <li><a href='a.com'>freeleaning</a></li>
-            <li><a href='a.com'>pricing</a></li>
-            <li><a href='a.com'>contanct</a></li>
+            <li>
+              <a href="a.com">freeleaning</a>
+            </li>
+            <li>
+              <a href="a.com">pricing</a>
+            </li>
+            <li>
+              <a href="a.com">contanct</a>
+            </li>
           </ul>
         </nav>
-        <div>
+        <div className="btn-container">
           <input></input>
           <Button>sign in</Button>
           <Button className="btn2">sign up</Button>
