@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSearch } from "react-icons/fa";
 import "../App.scss";
 import Button from "../Components/buttons";
 
@@ -33,19 +34,23 @@ const Navbar = () => {
                 {/* <a href="sum.com">v</a> */}
               </ul>
             </li>
-            <li>
+            <li className="gunna">
               <a href="a.com">freeleaning</a>
             </li>
-            <li>
+            <li className="gunna">
               <a href="a.com">pricing</a>
             </li>
-            <li>
+            <li className="gunna">
               <a href="a.com">contanct</a>
             </li>
           </ul>
         </nav>
         <div className="btn-container">
-          <input></input>
+          <div className="input-search">
+            <input></input>
+            <p>...</p>
+            <FaSearch />
+          </div>
           <Button>sign in</Button>
           <Button className="btn2">sign up</Button>
         </div>

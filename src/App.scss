@@ -58,7 +58,6 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
 .nav-list {
   width: 37rem;
   display: flex;
-  // flex-direction: row;
   justify-content: center;
   align-items: center;
   .sub-list1 {
@@ -66,7 +65,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     height: 100%;
     // min-width: 5rem;
     position: absolute;
-    
+
     li {
       box-shadow: 0 2px 7px 1px rgb(0 0 0 / 5%),
         0 6px 32px 0 rgb(18 43 70 / 10%);
@@ -111,7 +110,10 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   input {
     display: none;
   }
-
+  .input-search {
+    // display: none;
+    visibility: hidden;
+  }
   ul {
     margin: 0 1rem 0 -2rem;
     height: 100%;
@@ -208,7 +210,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   }
   p {
     font-family: "Monstrait", sans-serif;
-    font-size: .97rem;
+    font-size: 0.97rem;
     font-weight: 300;
     color: $baseText1;
     line-height: 1.7rem;
@@ -722,6 +724,45 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   .foots-end {
     color: rgb(141, 136, 136);
     font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .nav-items {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list {
+    width: fit-content;
+  }
+  .gunna {
+    // visibility: hidden;
+    display: none;
+  }
+  li {
+    font-size: large !important;
+  }
+
+  .input-search {
+    visibility: visible;
+    display: grid;
+    // align-items: center;
+    font-size: 1rem;
+    p {
+      padding-right: 0.5rem;
+      padding-bottom: 0.4rem;
+      font-weight: 700;
+    }
+  }
+  .on-the-board {
+    margin: 0 4% 4% 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-container {
+    display: grid;
   }
 }
 
