@@ -21,7 +21,7 @@ const Incredible = () => {
               <img src={SwagAcademy} alt='onboardimg2'/>
           </div>
           <div className='cursor-down'>
-              v
+              
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
+import { CgMenuLeft, CgSearch } from "react-icons/cg";
 import "../App.scss";
 import Button from "../Components/buttons";
 
@@ -7,13 +8,24 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="nav-items">
-        <div>
+        <div className="img-lg">
           <img
             src="https://www.theswagacademy.com/wp-content/uploads/2021/05/swag_text_white.png"
             alt="swaglogo"
           />
         </div>
         <nav>
+          {/* SMALL SCREEN NAVIGATOR */}
+          <div className="small-screen-nav">
+            <CgMenuLeft />
+            <img
+              className="img"
+              src="https://www.theswagacademy.com/wp-content/uploads/2021/05/swag_text_white.png"
+              alt="swaglogo"
+            />
+            <CgSearch />
+          </div>
+          {/* LARGE SCREEN NAV */}
           <ul className="nav-list">
             <li>
               company
