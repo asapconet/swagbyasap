@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaAngleDown } from 'react-icons/fa';
 import SwagAcademy from '../svg/SwagAcademy.png';
 
 const Incredible = () => {
@@ -18,10 +19,10 @@ const Incredible = () => {
             </p>
           </div>
           <div>
-              <img src={SwagAcademy} alt='onboardimg2'/>
+              <img className='logo-sm' src={SwagAcademy} alt='onboardimg2'/>
           </div>
           <div className='cursor-down'>
-              
+              <FaAngleDown/>
           </div>
         </div>
       </section>
