@@ -795,14 +795,12 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
 //   animation-duration: 1s;
 //   animation-name: textmove;
 // }
-  .img-sec-sm {
-    display: none;
-  }
+.img-sec-sm {
+  display: none;
+}
 .small-screen-nav {
-    display: none;
-  }
-
-
+  display: none;
+}
 
 @media screen and (max-width: 660px) {
   // SMALL SCREEN NAV
@@ -831,7 +829,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     padding: 1rem 1.5rem;
     font-size: 1.5rem;
     .img {
-      width: 11.4rem;
+      width: 10rem;
       padding-left: 3rem;
       // background: green;
     }
@@ -840,7 +838,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   // ONBOARDING
   .onboarding {
     height: 91vh;
-    padding: 3rem .4rem 0 .4rem;
+    padding: 3rem 0.4rem 0 0.4rem;
   }
   .on-the-board {
     height: 100vh;
@@ -851,7 +849,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: .1rem;
+      padding: 0.1rem;
       h1 {
         font-size: 2rem;
         display: flex;
@@ -880,7 +878,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     }
   }
 
-  // COUNTER BACKGROUND STARTING 
+  // COUNTER BACKGROUND STARTING
   .card-container {
     width: 100%;
     display: flex;
@@ -917,10 +915,10 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     font-size: 2rem;
     padding: 1rem;
     font-weight: 600;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
   }
   h1 {
-    font-size: 2rem;    
+    font-size: 2rem;
   }
   p {
     padding: 1rem;
@@ -931,6 +929,63 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   }
   .cursor-down {
     font-size: 3.5rem;
-    padding-top: 4.5rem;
+    padding: 4.5rem 0 3.5rem 0;
+  }
+}
+
+// STARTING OF FEATURED SECTION
+
+.feature-box {
+  padding: 1% 4% 4% 4%;
+  margin: 0rem;
+  h5 {
+    margin: 0rem;
+    font-size: 1.8rem;
+    font-weight: 450;
+    letter-spacing: 0.3rem;
+  }
+  h1 {
+    margin: 0rem;
+    padding: 0.5rem 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 450;
+    letter-spacing: 0.11rem;
+  }
+  .main-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .box-1 {
+      padding: 1rem;
+      width: 90%;
+      text-align: center;
+      span {
+        padding: 0.5rem;
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 450;
+      }
+      p {
+        padding: 1% 4% 2% 4%;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 100;
+        word-spacing: 0.14rem;
+        line-height: 1.4rem;
+      }
+    }
+    .box2 {
+      text-align: center;
+      width: 100%;
+      margin: 0rem;
+      .img-container-sm {
+        margin: 0rem;
+        padding: 4rem 0 0 0;
+        img {
+          width: 25rem;
+        }
+      }
+    }
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaCheck } from 'react-icons/fa';
 import Updatedmockup1 from '../svg/Updatedmockup1.png'
 
 const Featured = () => {
@@ -6,12 +7,12 @@ const Featured = () => {
       <section>
         <div className='feature-box'>
           <div>
-            <h5>FEATURES</h5>
+            <h5>FEATURED</h5>
             <h1>Our Exclusive App</h1>
           </div>
           <div className='main-box'>
             <div className='box-1'>
-              <span>the tick</span>
+              <span><FaCheck/></span>
               <h3>Mobile Ready</h3>
               <p>
                 We have an insane mobile app! The mobile app allows you to get
@@ -22,7 +23,7 @@ const Featured = () => {
               </p>
             </div>
             <div className='box2'>
-              <figure>
+              <figure className='img-container-sm'>
                 <img src={Updatedmockup1} alt="mobile img" />
               </figure>
             </div>
