@@ -1,4 +1,6 @@
 import React from "react";
+import { CgArrowLongRight } from "react-icons/cg";
+import { FaStar } from "react-icons/fa";
 import "../App.scss";
 import Button from "../Components/buttons";
 import SwagAcademyHero1 from "../svg/SwagAcademyHero1.png";
@@ -14,7 +16,8 @@ const Onboard = () => {
         <div className="stamp-sec">
           <div>
             <div className="frame">
-              <span>X BEST EDUCATIONAL FOREX PROGRAM</span>
+              <span>
+                <FaStar/> BEST EDUCATIONAL FOREX PROGRAM</span>
             </div>
           </div>
           <h1>
@@ -29,7 +32,7 @@ const Onboard = () => {
             it for the average learner through our immersive video course and
             clever breakdowns by Swaggy C. Welcome to The Swag x GOAT Academy!
           </p>
-          <Button className="general-btn">START NOW </Button>
+          <Button className="general-btn">START NOW <CgArrowLongRight className="arrow"/> </Button>
         </div>
         <div className="image-sec">
           <div>

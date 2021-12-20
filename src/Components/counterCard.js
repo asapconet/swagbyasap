@@ -10,13 +10,13 @@ const CounterCard = () => {
         </div>
       </div>
       <div className="cards">
-        <div>
+        <div className="card-items">
           <h1>123+</h1>
           <p>Hours of Content</p>
         </div>
       </div>
       <div className="cards">
-        <div>
+        <div className="card-items">
           <h1>YES</h1>
           <p>Certified in Finance</p>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaSearch } from "react-icons/fa";
+import { FaAngleDown, FaSearch } from "react-icons/fa";
 import { CgMenuLeft, CgSearch } from "react-icons/cg";
 import "../App.scss";
 import Button from "../Components/buttons";
@@ -25,10 +25,12 @@ const Navbar = () => {
             />
             <CgSearch />
           </div>
+
+
           {/* LARGE SCREEN NAV */}
           <ul className="nav-list">
             <li>
-              company
+              company <FaAngleDown/>
               <ul className="sub-list1">
                 <li>About</li>
                 <li>Careers</li>
@@ -37,7 +39,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              education
+              education <FaAngleDown/>
               <ul className="sub-list2">
                 <li>GOAT Acadamy</li>
                 <li>Glossary</li>
@@ -63,6 +65,7 @@ const Navbar = () => {
             <p>...</p>
             <FaSearch />
           </div>
+          <CgSearch />
           <Button>sign in</Button>
           <Button className="btn2">sign up</Button>
         </div>
