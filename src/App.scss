@@ -998,6 +998,53 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     }
     .cursor-down {
       padding: 0rem;
+      margin-bottom: 0.2em;
+    }
+  }
+
+  // ACADEMY PREVIEW SECTION
+  .preview-box {
+    padding: 0 4% 4% 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      margin: 0rem;
+      padding: 2% 0 5% 0;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    .video-card {
+      padding: 0 3.5% 0 3.5%;
+      width: 90%;
+      height: 14.5rem;
+    }
+    .option-box {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0rem;
+      padding: 8% 0 0 0;
+      width: 100%;
+
+      .option-box-main {
+        padding: 5% 0 0 0;
+        margin-top: 1.4rem;
+        width: 90%;
+        .icons {
+          font-size: 2rem;
+          border-radius: 50%;
+          padding: 1.5rem;
+          margin: 1.5rem;
+          color: $baseText1;
+          background: #ffffff0c;
+        }
+        h3 {
+          font-weight: 450;
+          margin-top: 1.5rem;
+        }
+      }
     }
   }
 }
