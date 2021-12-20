@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCheck } from 'react-icons/fa';
+import { FaAngleDown, FaCheck } from 'react-icons/fa';
 import Updatedmockup1 from '../svg/Updatedmockup1.png'
 
 const Featured = () => {
@@ -28,12 +28,14 @@ const Featured = () => {
               </figure>
             </div>
           </div>
-          <p>
+          <p className='last-pargh'>
             Our mobile app will be released shortly. Stay tuned for updates as
             we are going through the final approval stages with the Google Play
             and the App Store.
           </p>
-          <p className='cursor-down'>v</p>
+          <p className='cursor-down'>
+            <FaAngleDown/>
+          </p>
         </div>
       </section>
     );
