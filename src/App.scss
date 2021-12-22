@@ -784,35 +784,6 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   }
 }
 
-// END OF FOOTER
-
-// MEDIA QUERIES //
-
-// @media screen and (max-width: 750px) {
-//   .nav-container {
-//     margin: 0;
-//     .nav-items {
-//       margin: 0;
-//       // display: flex;
-//       // justify-content: center;
-//     }
-//     ul,
-//     Button {
-//       display: none;
-//     }
-//   }
-
-//   .on-the-board {
-//    margin: 0;
-//    display: flex;
-//    flex-direction: row;
-//   }
-// }
-
-// p {
-//   animation-duration: 1s;
-//   animation-name: textmove;
-// }
 .img-sec-sm {
   display: none;
 }
@@ -833,11 +804,12 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     }
   }
   .btn-container {
-    Button, p, .search-lg {
-
+    Button,
+    p,
+    .search-lg {
       display: none;
     }
-    }
+  }
   .nav-items {
     display: block;
   }
@@ -926,7 +898,6 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   }
 
   // INCREDIBLE STARTING
-
   .incredible-box {
     padding: 4% 4% 0 4%;
     h5 {
@@ -952,7 +923,6 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   }
 
   // STARTING OF FEATURED SECTION
-
   .feature-box {
     padding: 1% 4% 4% 4%;
     margin: 0rem;
@@ -1068,4 +1038,40 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   }
 
   // BENEFITS SECTION STARTS //
+
+  .benefit-box {
+    padding: 4.5%;
+    .top-box {
+      margin: 0%;
+      h1 {
+        font-size: 1.9rem;
+      }
+      .main-box {
+        p {
+          font-size: 0.95rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+    .sub-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .sub-boxes {
+        width: 90%;
+        p {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        .icons {
+          font-size: 2rem;
+          border-radius: 50%;
+          padding: 1.5rem;
+          margin: 1.5rem;
+          color: $baseText1;
+          background: #ffffff0c;
+        }
+      }
+    }
+  }
 }
