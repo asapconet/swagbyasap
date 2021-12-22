@@ -398,6 +398,14 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
 .preview-box {
   align-items: center;
   padding: 0 15rem 6rem 10rem;
+  .icons {
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    color: $baseText1;
+    background: #ffffff0c;
+  }
   h1 {
     color: $baseText1;
     font-size: 2rem;
@@ -453,6 +461,14 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
 .benefit-box {
   background-image: radial-gradient(at center right, #590a5d 0%, #131820 58%);
   padding: 2rem 12rem 4rem 10rem;
+  .icons {
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    color: $baseText1;
+    background: #ffffff0c;
+  }
   .top-box {
     display: flex;
     justify-content: center;
