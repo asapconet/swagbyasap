@@ -26,11 +26,10 @@ const Navbar = () => {
             <CgSearch />
           </div>
 
-
           {/* LARGE SCREEN NAV */}
           <ul className="nav-list">
             <li>
-              company <FaAngleDown/>
+              company <FaAngleDown />
               <ul className="sub-list1">
                 <li>About</li>
                 <li>Careers</li>
@@ -39,7 +38,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              education <FaAngleDown/>
+              education <FaAngleDown />
               <ul className="sub-list2">
                 <li>GOAT Acadamy</li>
                 <li>Glossary</li>
@@ -59,12 +58,12 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+        <div className="input-search">
+          <FaSearch />
+        </div>
         <div className="btn-container">
-          <div className="input-search">
-            <input></input>
-            <p>...</p>
-            <FaSearch />
-          </div>
+          <input></input>
+          <p>...</p>
           <CgSearch />
           <Button>sign in</Button>
           <Button className="btn2">sign up</Button>

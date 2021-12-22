@@ -836,7 +836,8 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   }
   .btn-container {
     Button {
-      display: none;
+      // display: none;
+      visibility: hidden;
     }
   }
   .nav-items {
