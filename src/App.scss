@@ -116,7 +116,6 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     visibility: hidden;
   }
   ul {
-    
     margin: 0 1rem 0 -2rem;
     height: 100%;
   }
@@ -131,7 +130,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     align-items: center;
     justify-content: center;
     font-family: Montserrat, sans-serif;
-    font-size: 0.9rem ;
+    font-size: 0.9rem;
     font-stretch: ultra-expanded;
     list-style-type: none;
     text-transform: capitalize;
@@ -230,7 +229,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     margin: 1.8rem 0 0.6rem 0;
     border: none;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     font-size: large;
     font-weight: 100;
     align-items: center;
@@ -307,7 +306,6 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
   }
 }
 .text-end {
@@ -835,11 +833,11 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     }
   }
   .btn-container {
-    Button {
-      // display: none;
-      visibility: hidden;
+    Button, p, .search-lg {
+
+      display: none;
     }
-  }
+    }
   .nav-items {
     display: block;
   }
@@ -1068,4 +1066,6 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
       }
     }
   }
+
+  // BENEFITS SECTION STARTS //
 }

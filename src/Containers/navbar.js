@@ -64,7 +64,7 @@ const Navbar = () => {
         <div className="btn-container">
           <input></input>
           <p>...</p>
-          <CgSearch />
+          <CgSearch className="search-lg" />
           <Button>sign in</Button>
           <Button className="btn2">sign up</Button>
         </div>
