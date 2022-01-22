@@ -56,7 +56,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
 // NAVBAR STYLES //
 
 .nav-list {
-  width: 37rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -809,6 +809,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
 
 @media screen and (max-width: 660px) {
   // SMALL SCREEN NAV
+
   .img-lg {
     img {
       display: none;
@@ -835,6 +836,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     align-items: center;
     padding: 1rem 1.5rem;
     font-size: 1.5rem;
+    width: 100%;
     .img {
       width: 10rem;
       padding-left: 3rem;
@@ -868,7 +870,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
         font-weight: 100;
       }
       .frame {
-        width: 28rem;
+        width: 24rem;
         background: #21092262;
       }
     }
@@ -881,7 +883,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
     margin-top: -3rem;
     padding: 2rem;
     img {
-      width: 27rem;
+      width: 24rem;
     }
   }
 
@@ -1088,6 +1090,26 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
           background: #ffffff0c;
         }
       }
+    }
+  }
+
+  // STARTING OF PRODUCTS SECTION
+  .product-ctner {
+    // width:
+    padding: 10%;
+    margin: 0%;
+    .gen-cnter0 {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        padding: 0 10% 1rem 10%;
+        margin: 0;
+      }
+    }
+    .price-box {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
