@@ -1112,4 +1112,24 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
       flex-direction: column;
     }
   }
+  .testimonial {
+    padding: 7%;
+    .gen-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .gen-head {
+        width: 24rem;
+        text-align: center;
+        h3 {
+          font-size: 1.5rem;
+        }
+        .disclaimer {
+         padding: 0;
+         margin: 0;
+         width: 100%;
+        }
+      }
+    }
+  }
 }
