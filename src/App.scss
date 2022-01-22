@@ -1112,6 +1112,29 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
       flex-direction: column;
     }
   }
+
+  // STARTING FOR INCREDIBLE SECTION
+  .incredible-box {
+    .logo-sm {
+      width: 23rem;
+    }
+  }
+
+  // STARTING OF FEATURED SECTION
+
+  .feature-box {
+    .box2 {
+      .img-container-sm {
+        width: 100%;
+        img {
+          width: 23rem;
+        }
+      }
+    }
+  }
+
+  // STARTING FOR TESTIMONIAL SECTION
+
   .testimonial {
     padding: 7%;
     .gen-body {
@@ -1125,9 +1148,9 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
           font-size: 1.5rem;
         }
         .disclaimer {
-         padding: 0;
-         margin: 0;
-         width: 100%;
+          padding: 0;
+          margin: 0;
+          width: 100%;
         }
       }
     }

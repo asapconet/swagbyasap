@@ -24,7 +24,7 @@ const Featured = () => {
             </div>
             <div className='box2'>
               <figure className='img-container-sm'>
-                <img src={Updatedmockup1} alt="mobile img" />
+                <img src={Updatedmockup1} alt="mobile img" className='sm-img' />
               </figure>
             </div>
           </div>
