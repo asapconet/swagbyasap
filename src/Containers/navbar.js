@@ -17,13 +17,18 @@ const Navbar = () => {
         <nav>
           {/* SMALL SCREEN NAVIGATOR */}
           <div className="small-screen-nav">
-            <CgMenuLeft />
-            <img
-              className="img"
-              src="https://www.theswagacademy.com/wp-content/uploads/2021/05/swag_text_white.png"
-              alt="swaglogo"
-            />
+            <div>
+              <CgMenuLeft />
+            </div>
+            <div>
+              <img
+                className="img"
+                src="https://www.theswagacademy.com/wp-content/uploads/2021/05/swag_text_white.png"
+                alt="swaglogo"
+              />
+            </div>
             <CgSearch />
+            <span></span>
           </div>
 
           {/* LARGE SCREEN NAV */}

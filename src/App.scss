@@ -809,7 +809,15 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
 
 @media screen and (max-width: 660px) {
   // SMALL SCREEN NAV
+  .nav-container {
 
+    // background-color: white;
+    // width:fit-content;
+    // .nav-items{
+    //   // background-color: #000;
+    //   // margin: 1rem;
+    // }
+  }
   .img-lg {
     img {
       display: none;
@@ -832,6 +840,7 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   }
   .small-screen-nav {
     display: flex;
+    // background-color: blue;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
