@@ -1162,8 +1162,69 @@ $backroundgradient1: linear-gradient(to right, #6752cf 0%, #974b9d 100%);
   .footer-bkgrnd {
     padding: 5%;
     display: block;
-    .foots1{
+    .foots {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .foots1 {
+      display: flex;
+      flex-direction: column;
       margin: 0%;
+      margin-bottom: 10%;
+      padding: 0%;
+      width: fit-content;
+      span {
+        width: 20%;
+        padding: 5%;
+        padding-left: 0%;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+      }
+      .icons--1 {
+        padding-top: 10%;
+
+        display: flex;
+        align-items: center;
+        a {
+          display: flex;
+          align-items: center;
+          width: max-content;
+          background-color: white;
+          border-radius: 50%;
+          color: #000;
+          padding: 1%;
+          margin-right: 2%;
+        }
+      }
+    }
+    .foots2 {
+      display: flex;
+      justify-content: space-between;
+      margin: 0%;
+      padding: 1%;
+      width: 100%;
+      div {
+        margin: 0%;
+        font-size: small;
+        a {
+          font-size: small;
+        }
+      }
+      .pricing--item {
+        color: $background1gld;
+      }
+    }
+    .foots-end {
+      text-align: center;
+      padding: 10%;
     }
   }
 }
