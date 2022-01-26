@@ -1,5 +1,5 @@
 import React from "react";
-import swag_text_white from "../svg/swag_text_white.png";
+// import swag_text_white from "../svg/swag_text_white.png";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -8,7 +8,12 @@ const Footer = () => {
       <div className="foots">
         <div className="foots1">
           <span>
-            <img src={swag_text_white} alt="" />
+            <img
+              src={
+                "https://www.theswagacademy.com/wp-content/uploads/2022/01/theswagacademy-logo.png?quality=90&w=500"
+              }
+              alt=""
+            />
           </span>
           <p>
             We help aspiring traders understand the Forex market through our
@@ -29,7 +34,9 @@ const Footer = () => {
         <section className="foots2">
           <div>
             <h4>Product</h4>
-            <a href="a.com" className="pricing--item">Pricing</a>
+            <a href="a.com" className="pricing--item">
+              Pricing
+            </a>
             <a href="a.com">Reviews</a>
           </div>
           <div>

@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="nav-items">
         <div className="img-lg">
           <img
-            src="https://www.theswagacademy.com/wp-content/uploads/2021/05/swag_text_white.png"
+            src="https://www.theswagacademy.com/wp-content/uploads/2022/01/theswagacademy-logo.png?quality=90&w=500"
             alt="swaglogo"
           />
         </div>
@@ -23,7 +23,7 @@ const Navbar = () => {
             <div>
               <img
                 className="img"
-                src="https://www.theswagacademy.com/wp-content/uploads/2021/05/swag_text_white.png"
+                src="https://www.theswagacademy.com/wp-content/uploads/2022/01/theswagacademy-logo.png?quality=90&w=500"
                 alt="swaglogo"
               />
             </div>
